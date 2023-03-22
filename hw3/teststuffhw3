@@ -1,0 +1,175 @@
+//linear 
+
+// void testarray(double array[], int arraylength, string arrayname)
+// {
+//     if(anyTrue(array, arraylength))
+//             cout << arrayname << ": true";
+//     else
+//         cout << arrayname << ": false";
+//     cout << ", " << arrayname << "(cT): " << countTrue(array, arraylength);
+//     cout << ", " << arrayname << "(fT): " << firstTrue(array, arraylength);
+//     cout << ", " << arrayname << "(IofM): " << indexOfMinimum(array, arraylength);
+
+//     cout << endl;
+// }
+// void test()
+// {
+//     //somepredicate: x > 0
+//     double a[6] = {2, -4.2, -23, -3.1, -5.2, -4};
+//     double b[6] = {-2, 4.2, 23, -3.1, -5.2, 4};
+//     double c[6] = {2, 4.2, 23, 3.1, 5.2, 4};
+//     double d[6] = {-2, -4.2, -23, -3.1, -5.2, -4};
+//     int n = 6;
+
+//     testarray(a, n, "a");
+//     testarray(b, n, "b");
+//     testarray(c, n, "c");
+//     testarray(d, n, "d");
+//     cout << "---------INTENDED RESULTS----------" << endl;
+//     cout << "a: true, a: 1, a: 0, a: 2" << endl;
+//     cout << "b: true, b: 3, b: 1, b: 4" << endl;
+//     cout << "c: true, c: 6, c: 0, c: 0" << endl;
+//     cout << "d: false, d: 0, d: -1, d: 2" << endl;
+// }
+// void testIsInArray(double basearray[], double smallarray[], string arrayname, int arraylength)
+// {
+//     if(isIn(smallarray, arraylength, basearray, 7))
+//         cout << arrayname << ": true";
+//     else
+//         cout << arrayname << ": false";
+//     cout << ", ";
+// }
+// void testIsIn()
+// {
+//     double baseArr[7] = {10, 50, 40, 20, 50, 40, 30};
+//     double a[3] =  {50, 40, 30};
+//     double b[3] =  {20, 40, 40};
+//     double c[3] =  {50, 30, 20};
+//     double d[3] =  {10, 50, 40};
+//     double e[2] = {50, 50};
+//     double f[2] = {10, 50};
+//     double g[2] = {10, 30};
+//     double h[2] = {30, 30};
+//     testIsInArray(baseArr, a, "a", 3);
+//     testIsInArray(baseArr, b, "b", 3);
+//     testIsInArray(baseArr, c, "c", 3);
+//     testIsInArray(baseArr, d, "d", 3);
+//     testIsInArray(baseArr, e, "e", 2);
+//     testIsInArray(baseArr, f, "f", 2);
+//     testIsInArray(baseArr, g, "g", 2);
+//     testIsInArray(baseArr, h, "h", 2);
+//     cout << endl;
+//     cout << "---------INTENDED RESULTS----------" << endl;
+//     cout << "a: true, ";
+//     cout << "b: false, ";
+//     cout << "c: false, ";
+//     cout << "d: true, ";
+//     cout << "e: true, ";
+//     cout << "f: true, ";
+//     cout << "g: true, ";
+//     cout << "h: false, ";
+// }
+// int main ()
+// {
+//     test();
+//     cout << "------------------------------------------------" << endl;
+//     testIsIn();
+// }
+
+//tree
+void testCount()
+// {
+//     double base[] = {10, 50, 40, 20, 50, 40, 30};
+//     double base2[] = {50, 50, 40, 20, 50, 40, 30};
+//     double base3[] = {50, 50, 50, 50, 50, 50, 50};
+// 	double a[] = {10, 20, 40};
+// 	double b[] = {10, 40, 30};
+// 	double c[] = {20, 10, 40};
+// 	double d[] = {50, 40, 30};
+//     double e[] = {40};
+//     double f[] = {50, 40};
+//     double g[] = {40};
+//     double h[] = {50};
+//     double i[] = {0, 3};
+
+//     cout << "a: " << countIsIn(a, 3, base, 7) << " || CORRECT = a: 1" << endl;
+//     cout << "b: " << countIsIn(b, 3, base, 7) << " || CORRECT = b: 2" << endl;
+//     cout << "c: " << countIsIn(c, 3, base, 7) << " || CORRECT = c: 0" << endl;
+//     cout << "d: " << countIsIn(d, 3, base, 7) << " || CORRECT = d: 3" << endl;
+//     cout << "e: " << countIsIn(e, 1, base, 7) << " || CORRECT = e: 2" << endl;
+//     cout << "f: " << countIsIn(f, 2, base, 7) << " || CORRECT = f: 3" << endl;
+//     cout << "f: " << countIsIn(f, 2, base2, 7) << " || CORRECT = f: 5" << endl;
+//     cout << "g: " << countIsIn(g, 0, base2, 7) << " || CORRECT = g: 1" << endl;
+//     cout << "h: " << countIsIn(h, 1, base3, 7) << " || CORRECT = h: 7" << endl;
+//     cout << "h: " << countIsIn(e, 1, base3, 7) << " || CORRECT = e: 0" << endl;
+//     cout << "i: " << countIsIn(i, 2, base, 7) << " || CORRECT = i: 0" << endl;
+
+
+//     // double base[] = {10, 20, 10};
+//     // double b[] = {10};//2
+//     // cout << "b: " << countIsIn(b, 1, base, 3) << " || CORRECT = b: 2" << endl;
+
+
+// }
+// void testDivide()
+// {
+//     double base[] = {10, 50, 40, 20, 50, 40, 30};
+//     int notGreater;
+//     int less;
+//     divide(base, 7, 30, notGreater, less);
+//     cout << "notGreater: " << notGreater << endl;
+//     cout << "less: " << less  << endl;
+//     for (int i = 0; i < 7; i++)
+//         cout << base[i] << ", ";
+//     cout << endl;
+   
+// }
+// void printArray(double a[], int n)
+// {
+//     for (int i = 0; i < n; i++)
+//             cout << a[i] << ", ";
+//         cout << endl;
+// }
+// void testOrder()
+// {
+//     double a[] = {10, 50, 40, 20, 50, 40, 30};
+//     cout << "Before: ";
+//     printArray(a, 7);
+//     order(a, 7);
+//     cout << "After: ";
+//     printArray(a, 7);
+//     cout << "--------------------" << endl;
+//     double b[] = {30, 20, 1};
+//     cout << "Before: ";
+//     printArray(b, 3);
+//     order(b, 1);
+//     cout << "After: ";
+//     printArray(b, 3);
+//     cout << "--------------------" << endl;
+//     double c[] = {30, 30, 40, 40};
+//     cout << "Before: ";
+//     printArray(c, 4);
+//     order(c, 4);
+//     cout << "After: ";
+//     printArray(c, 4);
+//     cout << "--------------------" << endl;
+//     double d[] = {40, 30, 40, 40};
+//     cout << "Before: ";
+//     printArray(d, 4);
+//     order(d, 4);
+//     cout << "After: ";
+//     printArray(d, 4);
+//     cout << "--------------------" << endl;
+//     double e[] = {40, 0, 40, 0};
+//     cout << "Before: ";
+//     printArray(e, 4);
+//     order(e, 4);
+//     cout << "After: ";
+//     printArray(e, 4);
+// }
+// int main()
+// {
+//     testCount();   
+//     //testDivide();
+//     //testOrder();
+// }
